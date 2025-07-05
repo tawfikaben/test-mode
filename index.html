@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>تجربة القواعد</title>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
+</head>
+<body>
+    <h1>تجربة قواعد Firestore</h1>
+    
+    <div id="auth-section">
+        <input type="email" id="email" placeholder="البريد الإلكتروني">
+        <input type="password" id="password" placeholder="كلمة المرور">
+        <button onclick="login()">تسجيل الدخول</button>
+        <button onclick="logout()">تسجيل الخروج</button>
+    </div>
+
+    <div id="products-section">
+        <h2>المنتجات:</h2>
+        <div id="products-list"></div>
+        
+        <h2>إضافة منتج:</h2>
+        <input type="text" id="product-name" placeholder="اسم المنتج">
+        <button onclick="addProduct()">إضافة</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
